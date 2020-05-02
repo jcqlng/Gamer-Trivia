@@ -70,27 +70,49 @@ var game= {
     incorrect:0,
     //starts the countdown
     countDown: function(){
+        game.counter--;
+        $("#counter").html(game.counter);
+        if(game.counter<=0){
+            console.log("Time up!");
+            game.timeUp();
+        }
     },
     // loads question
     loadQuestion: function(){
+        timer = setInterval(game.countDown,1000);
+        $("#subWrapper").html("<h2>"+question[game.currentQuestion].
+            question+"</h2>");
+            for(var i=0;i<questions[game.currentQuestion].answers.length;i++){
+                $('#subWrapper').append('<button class="answer-button" id="button-'+i+'" data-name="'+questions[game.currentQuestion].answers[i]+'">'+questions[game.currentQuestion].answers[i]+'</button>');
+            }
     },
     // shows next question
+    nextQuestion: function(){
     
-    
+    },
     // when the time is up
+    timeUp: function(){
 
+    },
     // shows result
+    results: function(){
 
+    },
     // click function
-    
+    clicked: function(){
+
+    },
     // when answered correctly
+    answeredCorrectly: function(){
 
+    },
     // when answered incorrectly 
+    answeredIncorrectly: function(){
 
+    },
+    // resets the game
+    reset: function(){
 
+    },
 
-    });
-    
-
-
-}
+    }
