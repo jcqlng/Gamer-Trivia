@@ -13,4 +13,9 @@ Trivia game using JavaScript for the logic and jQuery to manipulate HTML
 
 * Functions for jQuery - https://www.sitepoint.com/5-ways-declare-functions-jquery/ 
 
+* Countdown timer reference - 
+1. https://codepen.io/piotrswioklo/pen/fqnIA 
+2. https://www.w3schools.com/howto/howto_js_countdown.asp
+
+
 
