@@ -8,6 +8,51 @@ var questions = [{
     question: "What does Mario jump on when he completes a level?",
     answers: ["A tree", "A castle", "A flag pole", "Yoshi"],
     correctAnswer: "A flag pole",
-    image: "assets/images/"
-
-}]
+    image: "assets/images/img.gif"
+}, {
+    question: "What does Mario jump on when he completes a level?",
+    answers: ["A tree", "A castle", "A flag pole", "Yoshi"],
+    correctAnswer: "A flag pole",
+    image: "assets/images/img.gif"
+}, {
+    question: "What does Mario jump on when he completes a level?",
+    answers: ["A tree", "A castle", "A flag pole", "Yoshi"],
+    correctAnswer: "A flag pole",
+    image: "assets/images/img.gif"
+}, {
+    question: "What does Mario jump on when he completes a level?",
+    answers: ["A tree", "A castle", "A flag pole", "Yoshi"],
+    correctAnswer: "A flag pole",
+    image: "assets/images/img.gif"
+}, {
+    question: "What does Mario jump on when he completes a level?",
+    answers: ["A tree", "A castle", "A flag pole", "Yoshi"],
+    correctAnswer: "A flag pole",
+    image: "assets/images/img.gif"
+}, {
+    question: "What does Mario jump on when he completes a level?",
+    answers: ["A tree", "A castle", "A flag pole", "Yoshi"],
+    correctAnswer: "A flag pole",
+    image: "assets/images/img.gif"
+}, {
+    question: "What does Mario jump on when he completes a level?",
+    answers: ["A tree", "A castle", "A flag pole", "Yoshi"],
+    correctAnswer: "A flag pole",
+    image: "assets/images/img.gif"
+}, {
+    question: "What does Mario jump on when he completes a level?",
+    answers: ["A tree", "A castle", "A flag pole", "Yoshi"],
+    correctAnswer: "A flag pole",
+    image: "assets/images/img.gif"
+}, {
+    question: "What does Mario jump on when he completes a level?",
+    answers: ["A tree", "A castle", "A flag pole", "Yoshi"],
+    correctAnswer: "A flag pole",
+    image: "assets/images/img.gif"
+}, {
+    question: "What does Mario jump on when he completes a level?",
+    answers: ["A tree", "A castle", "A flag pole", "Yoshi"],
+    correctAnswer: "A flag pole",
+    image: "assets/images/img.gif"
+}
+]}
