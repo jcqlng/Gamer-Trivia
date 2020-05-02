@@ -1,6 +1,7 @@
 // The start button function to commence the game
 $("#start").on("click", function(){
     $("#start").remove();
+    game.loadQuestion();
 })
 
 // Setting up the array of questions
