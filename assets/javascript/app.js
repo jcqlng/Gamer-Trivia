@@ -69,12 +69,13 @@ var game= {
     //shows incorrect
     incorrect:0,
     //starts the countdown
-    countDown: function({
-
-    }),
+    countDown: function(){
+    },
     // loads question
-
+    loadQuestion: function(){
+    },
     // shows next question
+    
     
     // when the time is up
 
@@ -87,6 +88,9 @@ var game= {
     // when answered incorrectly 
 
 
+
+    });
+    
 
 
 }
