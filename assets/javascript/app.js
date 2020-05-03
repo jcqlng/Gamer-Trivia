@@ -19,41 +19,41 @@ var questions = [{
     question: "What does Mario jump on when he completes a level?",
     answers: ["A tree", "A castle", "A flag pole", "Yoshi"],
     correctAnswer: "A flag pole",
-    image: "assets/images/img.gif"
+    image: "assets/images/mario.gif"
+}, {
+    question: "Which videogame console did Nintendo release directly prior to the Wii?",
+    answers: ["Gameboy", "Game Cube", "DreamCast", "Nintendo DS"],
+    correctAnswer: "Game Cube",
+    image: "assets/images/gamecube.gif"
+}, {
+    question: "V-Bucks are the in-game currency for which famous videogame franchise?",
+    answers: ["Forza", "Call of Duty", "Pokemon", "Fortnite"],
+    correctAnswer: "Fortnite",
+    image: "assets/images/fortnite.gif"
+}, {
+    question:"The word Pokémon is generally understood to be a translation of which phrase?",
+    answers: ["Small Monsters", "Wild Animals", "Poke Bowl", "Pocket Monsters"],
+    correctAnswer: "Pocket Monsters",
+    image: "assets/images/pokemon.gif"
+}, {
+    question: "What are the professions of Mario and his brother Luigi?",
+    answers: ["Italian Chefs", "Construction Workers", "Plumbers", "Lawyers"],
+    correctAnswer: "Plumbers",
+    image: "assets/images/mario-luigi.gif"
+}, {
+    question: "The original designer behind the game "Tetris" is from which nation?",
+    answers: ["Russia", "Japan", "Vietnam", "China"],
+    correctAnswer: "Russia",
+    image: "assets/images/tetris.gif"
 }, {
     question: "What does Mario jump on when he completes a level?",
     answers: ["A tree", "A castle", "A flag pole", "Yoshi"],
     correctAnswer: "A flag pole",
     image: "assets/images/img.gif"
 }, {
-    question: "What does Mario jump on when he completes a level?",
-    answers: ["A tree", "A castle", "A flag pole", "Yoshi"],
-    correctAnswer: "A flag pole",
-    image: "assets/images/img.gif"
-}, {
-    question: "What does Mario jump on when he completes a level?",
-    answers: ["A tree", "A castle", "A flag pole", "Yoshi"],
-    correctAnswer: "A flag pole",
-    image: "assets/images/img.gif"
-}, {
-    question: "What does Mario jump on when he completes a level?",
-    answers: ["A tree", "A castle", "A flag pole", "Yoshi"],
-    correctAnswer: "A flag pole",
-    image: "assets/images/img.gif"
-}, {
-    question: "What does Mario jump on when he completes a level?",
-    answers: ["A tree", "A castle", "A flag pole", "Yoshi"],
-    correctAnswer: "A flag pole",
-    image: "assets/images/img.gif"
-}, {
-    question: "What does Mario jump on when he completes a level?",
-    answers: ["A tree", "A castle", "A flag pole", "Yoshi"],
-    correctAnswer: "A flag pole",
-    image: "assets/images/img.gif"
-}, {
-    question: "What does Mario jump on when he completes a level?",
-    answers: ["A tree", "A castle", "A flag pole", "Yoshi"],
-    correctAnswer: "A flag pole",
+    question: "The most-popular American football videogame franchise is named after which individual?",
+    answers: ["Tom Brady", "John Madden", "Peyton Manning", "Michael Jordan"],
+    correctAnswer: "John Madden",
     image: "assets/images/img.gif"
 }, {
     question: "What does Mario jump on when he completes a level?",
@@ -137,7 +137,7 @@ var game= {
         $('#subWrapper').append("<button id='reset'> Reset</button>");
     },
     // click function
-    clicked: function(){
+    clicked: function(e){
         clearInterval(timer);
         if($(e.target).data("name")==questions[game.currentQuestion].correctAnswer){
             game.answeredCorrectly();
