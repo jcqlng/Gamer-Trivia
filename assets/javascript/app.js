@@ -1,7 +1,12 @@
-// The start button function to commence the game
+// The start button function to commence the game and disappears 
 $("#start").on("click", function(){
     $("#start").remove();
     game.loadQuestion();
+})
+
+// another click function for the answer button 
+$(document).on('click', '.answer-button', function(e){
+    game.clicked(e);
 })
 
 // Setting up the array of questions
@@ -89,7 +94,10 @@ var game= {
     },
     // shows next question
     nextQuestion: function(){
-    
+    game.counter= 30;
+    $("#counter").html(game.counter);
+    game.currentQuestion++;
+    game.loadQuestion();
     },
     // when the time is up
     timeUp: function(){
@@ -101,15 +109,28 @@ var game= {
     },
     // click function
     clicked: function(){
-
+        clearInterval(timer);
+        if($(e.target).data("name")==questions[game.currentQuestion].correctAnswer){
+            game.answeredCorrectly();
+        } else {
+            game.answeredIncorrectly();
+        }
     },
     // when answered correctly
     answeredCorrectly: function(){
-
+        console.log("Correct!");
+        clearInterval(timer);
+        game.correct++;
+        $("#subWrapper").html('<h2>Yayy!!You got it right!!</h2>');
+        if(game.currentQuestion==questions.length-1){
+            setTimeout(game.results,3*1000);
+        } else {
+            setTimeout(game.nextQuestion,3*1000);
+        }
     },
     // when answered incorrectly 
     answeredIncorrectly: function(){
-
+        console.log("Incorrect!");
     },
     // resets the game
     reset: function(){
