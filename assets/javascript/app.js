@@ -46,25 +46,25 @@ var questions = [{
     correctAnswer: "Russia",
     image: "assets/images/tetris.gif"
 }, {
-    question: "What does Mario jump on when he completes a level?",
-    answers: ["A tree", "A castle", "A flag pole", "Yoshi"],
-    correctAnswer: "A flag pole",
-    image: "assets/images/img.gif"
+    question: "What does NES stand for?",
+    answers: ["Non Essential System", "New Entertainment System", "Nintendo Entertainment System", "New Era System"],
+    correctAnswer: "Nintendo Entertainment System",
+    image: "assets/images/nes.gif"
 }, {
     question: "The most-popular American football videogame franchise is named after which individual?",
     answers: ["Tom Brady", "John Madden", "Peyton Manning", "Michael Jordan"],
     correctAnswer: "John Madden",
-    image: "assets/images/img.gif"
+    image: "assets/images/madden.gif"
 }, {
-    question: "What does Mario jump on when he completes a level?",
-    answers: ["A tree", "A castle", "A flag pole", "Yoshi"],
-    correctAnswer: "A flag pole",
-    image: "assets/images/img.gif"
+    question: "What is the all-time highest grossing game",
+    answers: ["Pokemon", "Fortnite", "Mortal Kombat", "World of Warcraft"],
+    correctAnswer: "World of Warcraft",
+    image: "assets/images/wwc.gif"
 }, {
-    question: "What does Mario jump on when he completes a level?",
-    answers: ["A tree", "A castle", "A flag pole", "Yoshi"],
-    correctAnswer: "A flag pole",
-    image: "assets/images/img.gif"
+    question: "What's the color of the wings of Dragon in Spyro?",
+    answers: ["Blue", "Orange", "Green", "Purple"],
+    correctAnswer: "Orange",
+    image: "assets/images/spyro.gif"
 }]; 
 
 // Properties to the game
