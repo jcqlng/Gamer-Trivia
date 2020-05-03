@@ -41,7 +41,7 @@ var questions = [{
     correctAnswer: "Plumbers",
     image: "assets/images/mario-luigi.gif"
 }, {
-    question: "The original designer behind the game "Tetris" is from which nation?",
+    question: "The original designer behind the game Tetris is from which nation?",
     answers: ["Russia", "Japan", "Vietnam", "China"],
     correctAnswer: "Russia",
     image: "assets/images/tetris.gif"
@@ -133,7 +133,7 @@ var game= {
         $('#subWrapper').html("<h2>Complete!</h2>");
         $('#subWrapper').append("<h3>Correct: "+game.correct+"</h3>");
         $('#subWrapper').append("<h3>Incorrect: "+game.incorrect+"</h3>");
-        $('#subWrapper').append("<h3>unAnswered: "+game.unAnswered+"</h3>");
+        $('#subWrapper').append("<h3>Un-Answered: "+game.unAnswered+"</h3>");
         $('#subWrapper').append("<button id='reset'> Reset</button>");
     },
     // click function
@@ -161,7 +161,7 @@ var game= {
     answeredIncorrectly: function(){
         console.log("Incorrect!");
         clearInterval(timer);
-        game.Incorrect++;
+        game.incorrect++;
         $('#subWrapper').html('<h2>Oh no its wrong!!!</h2>');
         $('#subWrapper') .append('<h3>The correct answer was: '+questions[game.currentQuestion].correctAnswer+'</h3>');
         if(game.currentQuestion==questions.length-1){
@@ -177,7 +177,19 @@ var game= {
         game.correct = 0;
         game.incorrect = 0;
         game.unAnswered = 0;
-        game.loadQuestion 
+        game.loadQuestion();
+        
+        
+
+
+
+
+
+
+
+
+
+
 
     },
     }
