@@ -99,9 +99,11 @@ var game= {
         //posts the question to page
         $("#subWrapper").append('<h2>'+questions[game.currentQuestion].question+'</h2>');
         //buttons to post questions
+        
             for(var i=0;i<questions[game.currentQuestion].answers.length;i++){
-                $('#subWrapper').append('<button class="answer-button" id="button-'+i+'" data-name="'+questions[game.currentQuestion].answers[i]+'">'+questions[game.currentQuestion].answers[i]+'</button>');
+                $('#subWrapper').append('<button type="button" class="answer-button btn btn-light" id="button-'+i+'" data-name="'+questions[game.currentQuestion].answers[i]+'">'+questions[game.currentQuestion].answers[i]+'</button>&nbsp;');
             }
+        
     },
     // shows next question
     nextQuestion: function(){
@@ -135,7 +137,7 @@ var game= {
         $('#subWrapper').append("<h3>Correct: "+game.correct+"</h3>");
         $('#subWrapper').append("<h3>Incorrect: "+game.incorrect+"</h3>");
         $('#subWrapper').append("<h3>Un-Answered: "+game.unAnswered+"</h3>");
-        $('#subWrapper').append("<button id='reset'> Reset</button>");
+        $('#subWrapper').append("<button id='reset' class='btn btn-secondary'> Reset</button>");
     },
     // click function
     clicked: function(e){
