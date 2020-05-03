@@ -21,6 +21,11 @@ Trivia game using JavaScript for the logic and jQuery to manipulate HTML
 1. https://stackoverflow.com/questions/48450969/targeting-correct-answers-with-button-click-in-trivia-game
 2. https://api.jquery.com/on/
 
+* For the trivia questions:
+1. https://www.triviaquestionsnow.com/for/video-games-trivia?page=1
+
+2. https://www.triviaquestionss.com/video-game-trivia/ 
+
 * For the .gif images : 
 1. Mario - https://www.google.com/imgres?imgurl=http%3A%2F%2Fi.imgur.com%2FXSiuElM.gif&imgrefurl=http%3A%2F%2Ftasvideos.org%2FGameResources%2FNES%2FSuperMarioBros.html&tbnid=KRnoRhIUz-odoM&vet=12ahUKEwjWofiE2ZbpAhVE0VMKHXDVDYgQMyhHegUIARD3AQ..i&docid=yG1TNNiXEhpQ1M&w=256&h=240&q=mario%20jumping%20gif&ved=2ahUKEwjWofiE2ZbpAhVE0VMKHXDVDYgQMyhHegUIARD3AQ 
 
@@ -34,7 +39,12 @@ Trivia game using JavaScript for the logic and jQuery to manipulate HTML
 
 6. Tetris - https://www.google.com/url?sa=i&url=https%3A%2F%2Fgiphy.com%2Fgifs%2FULqXxpYCI6iPe%2Fhtml5&psig=AOvVaw0Mnm5jUn62ee9ytn8b0s67&ust=1588562575217000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIiUmfLelukCFQAAAAAdAAAAABAM
 
+7. NES - https://www.google.com/url?sa=i&url=https%3A%2F%2Fdribbble.com%2Fshots%2F3612196-NES&psig=AOvVaw289NG8rTFqXYDFsuvwa9Iy&ust=1588563436914000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJC1rI3ilukCFQAAAAAdAAAAABBC
+
 8. Madden - https://www.google.com/url?sa=i&url=https%3A%2F%2Fgiphy.com%2Fgifs%2FaURGPBNdv5hQY%2Fhtml5&psig=AOvVaw2Llg6Dqt_vg8XW2vjf733Q&ust=1588562399713000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPi0857elukCFQAAAAAdAAAAABAY
 
+9. World of Warcraft - https://www.google.com/url?sa=i&url=https%3A%2F%2Fgiphy.com%2Fgifs%2Fwarcraft-world-of-warcraft-35R7kJ7bApSTdfzAFZ&psig=AOvVaw3_9oHpPtyl6OQMSXPj_NSy&ust=1588564024428000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNCo5abklukCFQAAAAAdAAAAABBJ
+
+10. Spyro - https://www.google.com/url?sa=i&url=https%3A%2F%2Fmichelledelgado.substack.com%2Fp%2Fwhy-spyro-the-dragon-almost-disappeared&psig=AOvVaw2RVV3am5hLCSjzRxnmZ-gm&ust=1588564280854000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKDFw5_llukCFQAAAAAdAAAAABBm
 
 
