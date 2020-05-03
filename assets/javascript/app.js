@@ -9,6 +9,11 @@ $(document).on('click', '.answer-button', function(e){
     game.clicked(e);
 })
 
+// New click event for game reset 
+$(document).on('click', '#reset', function(){
+    game.reset();
+})
+
 // Setting up the array of questions
 var questions = [{
     question: "What does Mario jump on when he completes a level?",
@@ -75,7 +80,7 @@ var game= {
     //shows incorrect
     incorrect:0,
     //shows the unanswered questions
-
+    unAnswered:0,
     //starts the countdown
     countDown: function(){
         game.counter--;
@@ -89,8 +94,10 @@ var game= {
     loadQuestion: function(){
         //every 1 second the counter will go down
         timer = setInterval(game.countDown,1000);
+        //html statement here
+        $("#subWrapper").html("<h2>Time remaining<span id='counter'>30</span> Seconds </h2>");
         //posts the question to page
-        $("#subWrapper").html("<h2>"+question[game.currentQuestion].question+"</h2>");
+        $("#subWrapper").append('<h2>'+questions[game.currentQuestion].question+'</h2>');
         //buttons to post questions
             for(var i=0;i<questions[game.currentQuestion].answers.length;i++){
                 $('#subWrapper').append('<button class="answer-button" id="button-'+i+'" data-name="'+questions[game.currentQuestion].answers[i]+'">'+questions[game.currentQuestion].answers[i]+'</button>');
@@ -100,9 +107,7 @@ var game= {
     nextQuestion: function(){
         //time for questions
         game.counter= 30;
-        //adds to html 
-        $("#counter").html(game.counter);
-        //loops to next question
+        $('#counter').html(game.counter);
         game.currentQuestion++;
         // loads the question
         game.loadQuestion();
@@ -129,7 +134,7 @@ var game= {
         $('#subWrapper').append("<h3>Correct: "+game.correct+"</h3>");
         $('#subWrapper').append("<h3>Incorrect: "+game.incorrect+"</h3>");
         $('#subWrapper').append("<h3>unAnswered: "+game.unAnswered+"</h3>");
-        
+        $('#subWrapper').append("<button id='reset'> Reset</button>");
     },
     // click function
     clicked: function(){
