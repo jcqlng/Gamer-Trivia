@@ -95,7 +95,7 @@ var game= {
         //every 1 second the counter will go down
         timer = setInterval(game.countDown,1000);
         //html statement here
-        $("#subWrapper").html("<h2>Time remaining<span id='counter'>30</span> Seconds </h2>");
+        $("#subWrapper").html("<h2>Time remaining <span id='counter'>30</span> Seconds </h2>");
         //posts the question to page
         $("#subWrapper").append('<h2>'+questions[game.currentQuestion].question+'</h2>');
         //buttons to post questions
@@ -120,6 +120,7 @@ var game= {
         $('#subWrapper').html('<h2> Out of time, Sorry!</h2>');
         // shows what the answer should have been
         $('#subWrapper') .append('<h3>The correct answer was: '+questions[game.currentQuestion].correctAnswer+'</h3>');
+        game.showImage();
         // copy & paste if/else statement from the answer functions 
         if(game.currentQuestion==questions.length-1){
             setTimeout(game.results,3*1000);
@@ -145,12 +146,17 @@ var game= {
             game.answeredIncorrectly();
         }
     },
+
+    showImage: function() {
+        $('#subWrapper').append('<img src="'+questions[game.currentQuestion].image+'" />');
+    },
     // when answered correctly
     answeredCorrectly: function(){
         console.log("Correct!");
         clearInterval(timer);
         game.correct++;
         $('#subWrapper').html('<h2>Yayy!!You got it right!!</h2>');
+        game.showImage();
         if(game.currentQuestion==questions.length-1){
             setTimeout(game.results,3*1000);
         } else {
@@ -164,6 +170,7 @@ var game= {
         game.incorrect++;
         $('#subWrapper').html('<h2>Oh no its wrong!!!</h2>');
         $('#subWrapper') .append('<h3>The correct answer was: '+questions[game.currentQuestion].correctAnswer+'</h3>');
+        game.showImage();
         if(game.currentQuestion==questions.length-1){
             setTimeout(game.results,3*1000);
         } else {
