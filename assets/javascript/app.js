@@ -180,5 +180,4 @@ var game= {
         game.loadQuestion 
 
     },
-
     }
