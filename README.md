@@ -1,5 +1,5 @@
 # TriviaGame
-Trivia game using JavaScript for the logic and jQuery to manipulate HTML
+Trivia game using JavaScript for the logic and jQuery to manipulate HTML. I focused mostly on the javascript sheet rather than the style. I used most of the material from the class activities and sources given. 
 
 # Game functions 
  * The player will have a limited amount of time to finish the quiz. 
