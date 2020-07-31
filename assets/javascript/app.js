@@ -187,18 +187,5 @@ var game= {
         game.incorrect = 0;
         game.unAnswered = 0;
         game.loadQuestion();
-        
-        
-
-
-
-
-
-
-
-
-
-
-
     },
-    }
+}
