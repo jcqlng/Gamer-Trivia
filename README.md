@@ -2,7 +2,7 @@
 Test your knowledge of video games with this 10 question trivia game! 
 
 # 📝 Description 📝 
-Link to the site: https://jcqlng.github.io/TriviaGame/
+Link to the site: https://jcqlng.github.io/Gamer-Trivia/
 
 This application is a video game themed trivia questionnaire. The user will have 30 seconds per question to finish the quiz. 
 The game ends when the time runs out and the page will reveal the number of questions that users answer correctly and incorrectly.
@@ -10,11 +10,29 @@ The user is allowed to pick only one answer per question. If the user answer inc
 
 The goal of the application is to utilize my skills in JavaScript for the logic and jQuery to manipulate HTML. 
 
+![Gamer-Trivia](assets/images/trivia.gif)
+
 # ⌨️ Webpage Components ⌨️ 
 * [HTML](https://www.w3schools.com/html/)
 * [CSS](https://www.w3schools.com/css/)
 * [Bootstrap](https://getbootstrap.com/)
 * [Jquery](https://jquery.com/) 
+
+# 🕷️ Bug Fixes 🕷️
+* July 31,2020 -- When the user completes the game, I noticed the counter would reset to 0 which gave the user no time to answer thus having an automatic loss. I went in the app.js file, looked at my reset function and it was in fact set to 0. I changed it to 30 seconds and it officially worked! 
+
+```
+// resets the game
+    reset: function(){
+        game.currentQuestion = 0;
+        game.counter = 30;
+        game.correct = 0;
+        game.incorrect = 0;
+        game.unAnswered = 0;
+        game.loadQuestion();
+    },
+}
+```
 
 # 🔗 Links and Resources 🔗
 * For assistance on loading [question function](https://www.geeksforgeeks.org/jquery-load-with-examples/)
@@ -23,7 +41,7 @@ The goal of the application is to utilize my skills in JavaScript for the logic 
 
 * Assistance with [countdown timer](https://codepen.io/piotrswioklo/pen/fqnIA) 
 
-* For click function issues -
+* For click function issues: 
 - [Click Here](https://stackoverflow.com/questions/48450969/targeting-correct-answers-with-button-click-in-trivia-game)
 - [Click Here](https://api.jquery.com/on/)
 

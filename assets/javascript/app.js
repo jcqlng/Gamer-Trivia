@@ -182,7 +182,7 @@ var game= {
     // resets the game
     reset: function(){
         game.currentQuestion = 0;
-        game.counter = 0;
+        game.counter = 30;
         game.correct = 0;
         game.incorrect = 0;
         game.unAnswered = 0;
