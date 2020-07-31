@@ -2,7 +2,7 @@
 Test your knowledge of video games with this 10 question trivia game! 
 
 # 📝 Description 📝 
-Link to the site: https://jcqlng.github.io/TriviaGame/
+Link to the site: https://jcqlng.github.io/Gamer-Trivia/
 
 This application is a video game themed trivia questionnaire. The user will have 30 seconds per question to finish the quiz. 
 The game ends when the time runs out and the page will reveal the number of questions that users answer correctly and incorrectly.
